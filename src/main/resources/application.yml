@@ -1,0 +1,19 @@
+spring:
+  data:
+    rest:
+      basePath: "/api"
+#  main:
+#    web-application-type: "none"
+#  profiles:
+#    active: "production"
+  datasource:
+    driver-class-name: "com.mysql.cj.jdbc.Driver"
+    url: "jdbc:mysql://localhost:3306/bookdb?useSSL=false"
+    username: "root"
+    password: "root"
+  jpa:
+    show-sql: false
+    database-platform: "org.hibernate.dialect.MySQL57Dialect"
+    hibernate:
+      ddl-auto: "update"
+      generate-ddl: true
